@@ -1,24 +1,46 @@
-# Welcome to your Lovable project
+# Welcome to my project
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+My project is a rule-based Audit Monitor System designed to support auditors by identifying potentially risky transactions.
 
-## How can I edit this code?
+The application is built using React with TypeScript for the frontend, while Supabase is used for authentication, database, and backend services.
 
-There are several ways of editing your application.
+Users upload or enter transaction data, and the system evaluates each record against predefined audit rules, such as duplicate transactions, threshold violations, and unusual patterns.
 
-**Use Lovable**
+Based on these rules, each transaction is assigned a risk level like Low, Medium, or High, which helps auditors quickly prioritize what needs review.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+I focused on designing the business rules, data flow, and validation logic, ensuring that the system is explainable, transparent, and easy to extend with new audit rules in the future.
 
-Changes made via Lovable will be committed automatically to this repo.
+🏗️ System Architecture
+
+1.Input Layer – Collects inputs as excel or csv file
+
+2.Rule Engine – Applies predefined rules and conditions
+
+3.Evaluation Layer – Matches events against rules
+
+4.Alert & Reporting Module – Generates alerts and audit reports
+
+5.Storage Layer – Stores logs, violations, and audit history
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- Tailwind CSS
+
+
+**URL**: https://audit-monitor.vercel.app/dashboard 
+
+## How can you edit this code?
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+If you want to work locally using your own IDE, you can clone this repo and push changes. 
 
 Follow these steps:
 
@@ -35,39 +57,3 @@ npm i
 # Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
